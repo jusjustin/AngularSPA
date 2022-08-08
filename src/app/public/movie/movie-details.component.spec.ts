@@ -11,7 +11,9 @@ describe('MovieDetailsComponent', () => {
       declarations: [ MovieDetailsComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(MovieDetailsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

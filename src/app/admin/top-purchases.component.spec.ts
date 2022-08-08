@@ -11,7 +11,9 @@ describe('TopPurchasesComponent', () => {
       declarations: [ TopPurchasesComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(TopPurchasesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

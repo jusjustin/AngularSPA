@@ -7,7 +7,7 @@ import { TopPurchasesComponent } from './top-purchases.component';
 const routes: Routes = [
   { path: "Create-Movie", component: CreateMovieComponent },
   { path: "Create-Cast", component: CreateCastComponent },
-  { path: "Top-Purchases", component: TopPurchasesComponent}
+  { path: "Top-Purchases", component: TopPurchasesComponent }
 ];
 
 @NgModule({

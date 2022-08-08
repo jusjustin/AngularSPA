@@ -11,7 +11,9 @@ describe('CreateCastComponent', () => {
       declarations: [ CreateCastComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(CreateCastComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
