@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { GenreService } from 'app/core/services/genre.service';
-import { Genre } from 'app/shared/models/Genre';
+import { GenreService } from 'src/app/core/services/genre.service';
+import { Genre } from 'src/app/shared/models/Genre';
 
 @Component({
   selector: 'app-genre',
@@ -9,7 +9,8 @@ import { Genre } from 'app/shared/models/Genre';
 })
 export class GenreComponent implements OnInit {
 
-  genres!:Genre;
+  genres!:Genre[];
+  flag:boolean = false;
   constructor(private genreService:GenreService) { }
 
   ngOnInit(): void {
@@ -17,6 +18,18 @@ export class GenreComponent implements OnInit {
       this.genres = g;
       console.log(this.genres);
     });
+  }
+
+  //deleteGenre(genreId:number){
+  //  this.genreService.deleteGenre(genreId).subscribe(g => {
+  //   console.log(g);
+  //    this.flag = true;
+    //});
+  //}
+
+  // This is a Mock Funtion, real functionality would be similar to above ^^
+  deleteGenre(){
+    this.flag = true;
   }
 
 }

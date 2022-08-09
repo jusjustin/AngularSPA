@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Movie } from 'app/shared/models/Movie';
+import { Movie } from 'src/app/shared/models/Movie';
 import { HttpClient } from '@angular/common/http';
-import { MovieDetails } from 'app/shared/models/MovieDetails';
+import { MovieDetails } from 'src/app/shared/models/MovieDetails';
 import { Observable } from 'rxjs';
 
 @Injectable({
